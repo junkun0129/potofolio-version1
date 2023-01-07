@@ -1,0 +1,16 @@
+
+body{
+    background-color: rgb(90, 73, 73);
+    position: relative;
+    //overflow: hidden;
+    color: red;
+    
+    .global{
+        width: 100%;
+        //background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

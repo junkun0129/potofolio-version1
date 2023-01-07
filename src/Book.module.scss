@@ -1,0 +1,101 @@
+$thicness:50px;
+$thic-title-back:20px;
+
+.space{
+
+    width: 600px;
+    height: 600px;
+    //background-color: aqua;
+  
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .cube{
+        transform-style: preserve-3d;
+        transform:
+        rotateX(20deg)
+        rotateY(20deg)
+        ;
+        width: 50%;
+        height: 70%;
+        color: black;
+        font-size: 40px;
+        position: relative;
+        .book{
+            
+            perspective: 1500px;
+            
+            width: 95%;
+            height: 95%;
+            box-sizing: border-box;
+            position: absolute;
+            transform: translateZ(2.5em);
+
+            &::after{
+                background-color: red;
+                
+            }
+        }
+
+        .top{
+            width: 99%;
+            height: $thicness;
+            border: solid 2px black;
+            background-color: red;
+            transform: rotateX(90deg) translateZ(0.65em) translateY(1.9em);
+            box-sizing: border-box;
+            position: absolute;
+   
+        }
+    
+        .bottom{
+            width: 99%;
+            height: $thicness;
+            border: solid 2px black;
+            background-color: rgb(144, 86, 86);
+            transform: rotateX(-90deg) translateZ(9.6em) translateY(-1.9em);
+            box-sizing: border-box;
+            position: absolute;
+            // transform: translateZ(80px);
+        }
+
+        .right{
+            width: $thicness;
+            height: 97%;
+            border: solid 2px black;
+            background-color: rgb(74, 18, 18);
+            transform: rotateY(90deg) translateZ(6.5em) translateX(-1.9em);
+            box-sizing: border-box;
+            position: absolute;
+            // transform: translateZ(80px);
+        }
+
+        .spine{
+            width: $thicness;
+            height: 97.5%;
+            border: solid 2px black;
+            background-color: rgb(219, 201, 201);
+            transform: rotateY(-90deg) translateZ(0.63em) translateX(1.9em);
+            color: black;
+            box-sizing: border-box;
+            position: absolute;
+            // transform: translateZ(80px);
+        }
+
+        .back{
+            width: 98%;
+            height: 97.5%;
+            border: solid 2px black;
+            background-color: rgb(119, 20, 20); 
+            transform: rotateY(180deg) translateZ(-1.4em) translateY(-0.05em);
+            box-sizing: border-box;
+            position: absolute;
+            // transform: translateZ(80px);
+        }
+    
+}
+}
+
+
